@@ -1,0 +1,668 @@
+Support Engineer
+System Engineer
+DevOps Engineer
+Cloud Admin/ Engineer
+Site reliabillity Engineer
+Infra admin
+
+ 
+7 to 7:50 
+
+Infra structure:
+................
+Data center
+Storage Componets (Object storage & Block Storage)
+Networking Componets
+Computing Componets (CPU , RAM ...)
+
+
+DNS:Domain Name System : 
+
+PORT NUMBER FOR DNS: 53
+
+
+https://www.amazon.in/
+
+How the name will be converted into ip ( Name resolution)
+
+why we need external storage in Data centers?
+
+
+on premisis: own data center
+
+
+IP: Internet protocal
+
+
+http: hypertext transfer protocal
+https hypertext transfer Protocal secure
+
+https://www.amazon.in/
+
+http://www.arikinfotech.com/
+
+
+
+onpream: our own datacenter
+
+
+datacenter------->computing components------> storage components -------> Networking components
+
+learningdevops.tk 
+
+
+room -----> rack servers ----> computing components------ storage components------> Networking components
+
+Engineers 
+
+
+10000 ---> 500 servers
+
+30000 ----> 200 servers 
+
+
+
+projects----> grid -----> power stations -----> sub stations -----> transformer ---> poles ---> home
+
+Disadvantages of on-prem:
+.........................
+Infra cost + upgrade + maintainance 
+
+cloud :
+......
+
+In cloud we need to pay only for the service
+
+
+cloud providers:
+................
+
+aws
+azure
+Google cloud
+ibm cloud
+
+
+regions:
+
+mumbai region -----> Ap-south-1
+
+regions ---> Availlabillity zones
+
+every region having two az's
+
+AP-SOUTH-1
+
+ap-south-1a
+ap-south-1b
+ap-south-1c
+
+Active - Active
+Active - passive ( when primary goes down it goes to DR)
+
+
+North virgina -
+
+
+Types of cloud:
+---------------
+
+Public cloud
+Private cloud
+Hibrid cloud
+
+Public cloud: 
+
+Resources can be shared as same hardware and software
+
+Private Cloud: Resources cannot be sahred
+
+Hibrid cloud: combination of both public and private cloud
+
+
+20 servers
+
+10 servers: 1a
+
+5 servers: 1b
+
+5 servers: 1c
+
+cloud Service models:
+.....................
+
+IAAS: Infra as a service
+PAAS: Platform as a service
+SAAS: software as a service
+
+index.html Apache Nginx
+
+Topics:
+.......
+EC2
+IAM
+S3
+VPC
+EBS
+LOAD BALANCERS
+AUTO SCALING
+ROUTE 53
+RDS
+
+
+EC2: Elastic Compute Cloud
+
+Lab1: How to launch linux machine in aws
+
+Launching models:
+................
+ON-Demand
+Reserved
+Spot instances
+
+
+rupess 100 
+
+reserved: 20 
+
+
+1 GB 1 vcpu 0.01 
+
+0.50 
+
+
+50 servers: Reserved (10000): 200
+
+10 servers: 1000 servers
+
+
+http
+https
+tcp
+
+Linux ----> ssh ---> 22
+
+0.0.0.0/0
+
+
+Gitbash
+putty
+MobaXterm
+
+
+Amazon linux: ec2-user
+centos: centos
+ubuntu: ubuntu
+Redhat linux: ec2-user
+windows: Administrator
+
+35.154.252.191
+
+amazon linux, centos, redhat linux: yum 
+
+
+ubuntu: apt
+
+hostnamectl set-hostname <name>
+
+command to create the directory in linux:
+
+mkdir <dir name>
+mkdir -p demo/Bhanu/Kiran
+
+This is my file
+
+echo
+vi, vim nano
+
+create a empty file in linux 
+
+touch
+
+mkdir
+touch
+cat
+ls -l
+echo
+
+vi: editor
+visual instrument
+
+Windows: RDP -----> 3389
+
+
+
+Lab2: :Launch Windows Machine
+allow the linux machine login through Windows
+Install Apache in Linux Machine and try to allow the traffic only from the windows machine
+
+Global base services
+Reagion base services
+Zone base services
+
+
+ls:  list
+ls -l : long
+
+ls -ltrh : long, time stamp, reverse, human readble
+
+
+
+copy a file server to server in linux
+
+scp -i <keyname> -r <file which you want to copy> user@ip
+
+
+-
+rw-:owner
+r--: group
+r--: others
+ 1 
+ ec2-user : owner
+ ec2-user : group
+ 1700 Jul 21 02:09 practice.pem
+ 
+ 
+ 
+ rwx
+ r: read 4
+ w: write 2
+ x: execuite 1
+ 
+ 
+ -rw-r--r-- 1 ec2-user ec2-user 1700 Jul 21 02:09 practice.pem
+ 644 
+ 
+ 400
+ 
+ chmod 400 practice.pem
+ 
+ 
+
+ec2-user ------> demo.txt ----> rwxrw-r--
+kiran kiran ---> 
+
+/var/www/html
+
+
+
+/ : root
+
+vpc: virtual private cloud
+
+
+2^32-n
+
+
+2^32-16
+
+2^16
+
+
+
+cidr:  classless inter domain routing
+
+
+172.
+192.
+10.
+
+high avaliablillity
+....................
+1a : public subnet private subnet
+1b
+1c
+
+
+65,xxxxx
+256 256
+
+10.0.0.0/16 : 65,xxx
+
+10.0.0.0/24: 256 
+
+10.0.0.0
+10.0.0.1
+10.0.0.2
+
+
+10.0.1.0/24
+
+10.0.1.0
+10.0.1.1
+10.0.1.2
+
+
+
+2"32-8
+2^8
+
+
+172.1.0.0/24 : 256
+
+
+172.1.0.0/28 : PUB01 : 172.1.0.0-15
+
+172.1.0.16/28 : PVT01 : 172.1.0.16-31
+
+
+
+
+256 : 
+
+16 
+16
+
+
+/: root
+
+Linux File system structure
+
+bin
+sbin
+etc
+dev
+proc
+var
+tmp
+usr
+home
+boot
+lib
+opt
+mnt
+srv
+
+/bin: it contains binary executables
+
+commands used by all the users of the system are located here
+
+ex: ls, pwd, cp, mv....
+
+/etc: Configuration files
+
+contains configuration files required by all programs
+ /dev: device files:
+ /proc: process information
+ 
+ /var: variabe files
+ 
+ /tmp: temporary Directory:
+ 
+ /home: 
+ /opt: optional 
+ 
+10.0.0.0/24 : 10.0.0.0-255
+ 10.0.1.0/24: 10.0.1.0-255
+ 
+ 
+ 
+ 
+ how to check the running process in linux:
+ 
+ ps -ef
+ 
+ how to filter the perticular process status
+ 
+ ps -ef | grep -i hpttd
+ 
+ cat demo.txt | grep -i hello
+ 
+ 
+ 
+ 
+ [14-07 13:50] bhanukiran battala
+Command to download a file from server local
+scp <username>@hostname:/remotefilepath>/filename /<path of local machine where you want  to download> 
+ like 4
+
+
+how to block a website in windows:
+
+C:\Windows\System32\drivers\etc
+
+127.0.0.1 www.youtube.com/
+
+
+
+#! /bin/bash
+<here>
+
+IAM: Identity and Access management
+
+Policies---> roles----> user/group
+
+
+console access
+programatic access
+
+accesskey and secret key
+
+manually thorough console
+
+programatically
+
+
+
+with the help of iam polacis we are able to establish communication between servive to service in aws
+
+
+invoice: 1mb
+50gb
+
+
+s3: simple storage service:
+
+
+
+
+
+
+
+Developer:---> ec2-ip
+
+ec2
+s3
+
+vpc
+ebs
+
+$50 
+
+$150
+
+
+
+crontab syntax:
+
+* * * * *
+
+
+
+s3 storage classes:
+....................
+standard
+standard-1A
+intelligent-Tiering
+one zone-1A
+s3 Glacier
+s3 Glacier Deep Archivce
+
+
+
+
+1 rupee
+
+90 pise
+
+50 pise
+
+5 pise
+
+
+s3 lifecycle:
+.............
+
+
+
+10 users
+
+EBS: Elastic Block storage
+
+Types of EBS volumes:
+....................
+General purpose SSD 
+Provisioned IOPS SSD
+Throughput Optimized HDD
+Cold HDD
+
+
+General purpose SSD:
+....................
+1gb 16GB
+ 100 16000 iops
+ 
+ Dev test
+ 
+ 250mbps
+ $0.1 PerGB
+
+Provisioned IOPS SSD:
+.....................
+
+4gb 16tb
+
+100 64000 iops
+
+1000 mbps
+
+$0.125 
+
+Throughput Optimized HDD:
+.........................
+500GB 16TB
+
+500 mbps with 500 iops
+
+$0.45 per GB
+
+Cold HDD :
+
+
+
+list of available disks:
+
+lsblk
+
+
+
+
+Automount EBS Volume on Reboot
+By default on every reboot, the EBS volumes other than root volume will get unmounted. To enable automount, you need to make an entry in the /etc/fstab file.
+
+Follow the steps given below to automount the EBS volume to ec2 instance.
+
+Step 1: Back up the /etc/fstab file.
+
+sudo cp /etc/fstab /etc/fstab.bak
+Step 2: Open /etc/fstab file and make an entry in the following format.
+
+device_name mount_point file_system_type fs_mntops fs_freq fs_passno
+For example,
+
+/dev/xvdf       /newvolume   ext4    defaults,nofail        0       0
+Step 3: Execute the following command to check id the fstab file has any error.
+
+sudo mount -a
+If the above command shows no error, it means your fstab entry is good.
+
+Now, on every reboot, the extra EBS volumes will get mounted automatically.
+
+
+Load balancer:
+..............
+Classic Load balancer
+Application Load Balancer
+Network Load Balancer
+
+
+learndevops.tk ----> this is my application
+learndevops.tk/login ---> this is my login page
+learndevops.tk/register ---> this is my register page
+
+
+
+.com
+.in
+.org
+
+
+DevOps: Development + Operations
+.......
+
+SDLC: software Development life cycle:
+....
+
+planning
+requirements 
+design
+Development
+testing
+deploy
+maintainance
+
+waterfall model
+incremental model
+v-shaped models
+iterative model
+Agile methodolagy
+
+
+login
+register
+
+scm: 
+Git
+cicd: 
+Jenkins
+nexus
+maven
+sonarqube
+
+configuration management:
+Ansible
+
+containariation:
+Docker
+
+monitor:
+nagios
+
+
+
+scm: source code management system
+
+svn: subversion ( centralized version controlling system)
+GIT: Distributed version controlling system
+
+
+
+GIT VS SVN
+GIT ARCHATICTURE
+HOW TO INSTALL GIT IN WINDOWS
+CREATE FIRST REPO IN GITHUB
+GIT INIT
+GIT ADD
+GIT COMMIT
+GIT REMOTE
+GIT PUSH
+
+
+what is branch
+when we will use branch
+how to create branch in local
+hot to list branches
+how to switch from one branch to another branch
+how to delete branch
+how to merge the code from one branch to another branch
+how to delete a branch in remote
