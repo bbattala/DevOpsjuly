@@ -666,3 +666,35 @@ how to switch from one branch to another branch
 how to delete branch
 how to merge the code from one branch to another branch
 how to delete a branch in remote
+
+
+what is git tag?
+when we will use tags?
+what is lightweighted tag? how to create it
+what is anotated tag ? how to create it
+what is the difference between lightweightedand anotatedtag
+how to check commits in local?
+hot to see perticular tag info?
+hot to push the tags to central repo
+how to delete the tags in local
+hot to delete the tags in central
+
+
+
+
+how to undo the working directory changes? 
+how to undo the all files in working directory changes?
+how to undo  the local commit changes?
+what is git reset?
+how many ways we can do rest? --------> soft hard mixed
+how to do changes in remote commit?
+
+soft reset hard reset mixed reset
+
+
+jenkins:
+..........
+jenkins is an cicd tool
+
+ci: continious integration
+cd : continous deploy/delevery
